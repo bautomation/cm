@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Business_Requirement__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Requirement</label>
+        <referenceTo>Business_Requirement__c</referenceTo>
+        <relationshipLabel>Business Solutions</relationshipLabel>
+        <relationshipName>RQS</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Business_Solution__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Solution</label>
+        <referenceTo>Business_Solution__c</referenceTo>
+        <relationshipLabel>Business Requirements</relationshipLabel>
+        <relationshipName>RQS</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Requirement_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Business_Requirement__r.Title__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requirement Title</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RQS</label>
+    <nameField>
+        <displayFormat>RQS-{000000}</displayFormat>
+        <label>RQS</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>RQS</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
